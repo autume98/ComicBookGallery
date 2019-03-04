@@ -13,7 +13,7 @@ Namespace Controllers
         End Sub
 
         Function Index() As ActionResult
-            Dim comicBooks = _comicBookRepository.GetComicBooks
+            Dim comicBooks = _comicBookRepository.GetComicBooks()
 
             Return View(comicBooks)
         End Function
